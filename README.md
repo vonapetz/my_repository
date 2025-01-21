@@ -1,3 +1,2 @@
 # my_repository
-fsxdfsfs
-cxvxvx
+просто текст =)
