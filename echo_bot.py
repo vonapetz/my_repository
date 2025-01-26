@@ -20,9 +20,9 @@ async def process_help_command(message: Message):
 
 @dp.message()
 async def send_echo(message: Message):
-    text = f'Вот и ссылочка. Ну а в ней {hlink("посылачька!", "https://s00.yaplakal.com/pics/pics_original/5/5/1/17796155.jpg")}'
-    await bot.send_message(chat_id=message.chat.id, text=text, parse_mode=ParseMode.HTML)
-    # await message.reply(text, parse_mode=ParseMode.HTML)
+    # text = f'Вот и ссылочка. Ну а в ней {hlink("посылочка!", "https://i.pinimg.com/736x/ab/39/00/ab3900e9d15b6de797bef39f8da9b0bb.jpg")}' # отправляет ссылку с картинкой
+    # await bot.send_message(chat_id=message.chat.id, text=text, parse_mode=ParseMode.HTML)
+    await message.reply(message.text)
 
 if __name__ == '__main__':
     dp.run_polling(bot)
